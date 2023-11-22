@@ -1,0 +1,58 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+div.sm-jumbotron{
+    margin: 0px;
+    padding: 2rem;
+    background-color:#29b6f6 ;
+    color: white
+}
+
+button.btn-submit{
+    background-color:#29b6f6 ;
+    color: white;
+    width: 100%;
+}
+
+button-btn-submit:focus,button.btn-submit:hover{
+    background-color:#29b6f6 ;
+}
+
+input.ng-invalid.ng-dirty{
+    border-bottom-color: red;
+    box-shadow: 0 1px 0 0 red;
+}
+
+.tabs{
+    height: 65px;
+}
+
+.tabs .tab{
+text-transform: none !important;
+line-height: 65px;
+height: 65px;
+}
+
+.tabs .tab a{
+    font-size: 25px;
+    color: gray ! important;
+}
+
+.tabs .tab a.active{
+    background-color: #fff !important;
+}
+
+.spcaing{
+    padding-block-end: 50px;
+}
+.locator { position: absolute; visibility: visible; left: 40px; top: 50px; height: 100px; width: 150px; z-index: 200; }
+
+header, main, footer {
+    padding-right: 300px;
+  }
+
+  @media only screen and (max-width : 992px) {
+    header, main, footer {
+      padding-left: 0;
+    }
+  }
