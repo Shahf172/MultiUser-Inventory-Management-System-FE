@@ -1,0 +1,56 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <h1> 
+      TAJMAC IT SOlUTIONS
+    </h1>
+    </mat-toolbar-row>
+  </mat-toolbar>
+<div class="row">
+  <div class="col s8 offset-s2">
+          <div class="card-tabs">
+              <div class="sm-jumbotron center-align">
+                  <h2>TAJMAC IT SOLUTIONS</h2>
+                  <marquee><h6>Enter Your Credentials for Signin!</h6> </marquee>
+              </div>
+
+          <ul class="tabs tabs-fixed-width tabs-transparent">
+            <li class="tab">
+              <a routerLink='/tajmacLogin' routerLinkActive='active'><i class="material-icons">person</i>TAJMAC LOGIN</a>
+            </li>
+            <li class="tab">
+              <a routerLink='/adminLogin' routerLinkActive='active'><i class="material-icons">person</i>ADMIN LOGIN</a>
+            </li>
+            <li class="tab">
+              <a routerLink='/userLogin' routerLinkActive='active'><i class="material-icons">person</i>USER LOGIN</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-content white">
+          <div class="row">
+            <router-outlet></router-outlet>
+          </div>
+      
+          </div>
+  </div>
+</div>
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <h1> 
+        TAJMAC IT SOlUTIONS
+          </h1>
+          </mat-toolbar-row>
+  
+  <mat-toolbar-row>
+    <ul>
+      <li>
+        contact us: tajmac@contactus.com
+        
+      </li>
+      <li> Copyright © 2017 TAJMAC IT Solutions Pvt. Ltd. All Rights Reserved. </li>
+    </ul>
+  </mat-toolbar-row>
+  
+   
+    
+          
+</mat-toolbar>

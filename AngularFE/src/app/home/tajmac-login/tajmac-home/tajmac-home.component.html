@@ -1,0 +1,21 @@
+<mat-toolbar color="primary">Welcome Fahad</mat-toolbar>
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened="true">
+      
+        <mat-toolbar color="">Menu <i class="material-icons">menu</i></mat-toolbar>
+      <span><mat-toolbar color="primary" routerLink='/addAdmin'><h4>Add admin  </h4><i class="material-icons">add</i></mat-toolbar></span>
+      <span><mat-toolbar color="primary" routerLink='/addSystem'><h4>Add System</h4>  <i class="material-icons">add</i></mat-toolbar></span>
+      <span><mat-toolbar color="primary" routerLink='/adminsList'><h4>Admins List</h4><i class="material-icons">list</i></mat-toolbar></span>
+      <span><mat-toolbar color="primary" routerLink='/allSystems'><h4>Systems List</h4><i class="material-icons">list</i></mat-toolbar></span>
+    </mat-drawer>
+    <mat-drawer-content>
+      <div class="row">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-drawer-content>
+    
+  </mat-drawer-container> 
+  <div>  
+  </div>
+  
+ 

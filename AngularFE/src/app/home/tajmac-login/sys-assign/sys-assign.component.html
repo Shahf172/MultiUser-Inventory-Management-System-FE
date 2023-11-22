@@ -1,0 +1,49 @@
+
+<div class="row">
+  <div class="col s8 offset-s2">
+          <div class="card">
+              <div class="sm-jumbotron center-align">
+                  <h2>Assign System</h2>
+              </div>
+<form  #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm.value)">
+<div class="row">
+  <div class="input-field col s12">
+    <input type="number" name="Id" #Id="ngModel" [(ngModel)]="sysAssign.Id"  placeholder="Id">
+</div>
+
+<mat-form-field>
+  <mat-select placeholder="Select System Id">
+    <mat-option *ngFor="let system of tajmacService.systemsList" [value]="system.value">
+      {{ system.sysId }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<mat-form-field>
+  <mat-select placeholder="Select System Id">
+    <mat-option *ngFor="let system of tajmacService.systemsList" [value]="system.value">
+      {{ system.sysId }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+</div>
+
+
+<div class="row">
+  <div class="input-field col s8">
+         <button class="btn-large btn-submit" type="submit">Submit</button>
+      </div>
+
+      <div class="input-field col s4">
+              <button class="btn-large btn-reset"  type="reset">Reset</button>
+          </div>
+      </div>
+
+  <div>
+      <router-outlet></router-outlet>
+  </div>
+
+</form>
+          </div>
+  </div>
+</div>

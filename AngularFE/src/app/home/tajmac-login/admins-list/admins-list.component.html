@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col s8 offset-s2">
+            <div class="card">
+                <div class="sm-jumbotron center-align">
+                    <h2>List Of Admins</h2>
+                </div>
+
+<table class="striped">
+
+    <th>Id</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email</th>
+    <th>Cell No</th>
+    <th>Phone No</th>
+    <th>Company Name</th>
+    <th>Username</th>
+    <th>Designation</th>
+
+
+    <tr *ngFor="let admin of tajmacService.adminsList">
+  
+      <td>{{admin.Id}}</td>
+      <td>{{admin.firstName}}</td>
+      <td>{{admin.lastName}}</td>
+      <td>{{admin.email}}</td>
+      <td>{{admin.cellNo}}</td>
+      <td>{{admin.PhNo}}</td>
+      <td>{{admin.companyName}}</td>
+      <td>{{admin.userName}}</td>
+      <td>{{admin.designation}}</td>
+      <td><i class="material-icons">edit</i></td>
+      <td><i class="material-icons">delete_forever</i></td>
+      <td><i class="material-icons">details</i></td>
+  
+    </tr>
+  
+  </table>
+
+            </div>
+          </div>
+        </div>

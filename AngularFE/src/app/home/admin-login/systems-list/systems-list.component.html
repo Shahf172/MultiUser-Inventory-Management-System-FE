@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col s8 offset-s2">
+            <div class="card">
+                <div class="sm-jumbotron center-align">
+                    <h2>Systems List</h2>
+                </div>
+
+<table class="striped">
+  <th>Admin Id</th>
+  <th>System Id</th>
+  <th>Part Type</th>
+  <th>SVSB</th>
+  <th>PG</th>
+  <th>Service</th>
+  <th>Express Code</th>
+  <th>No Of CPU's</th>
+  <th>Mobo Model</th>
+  <th>Mobo Chipset</th>
+  
+  <tr *ngFor="let system of adminService.systemsList">
+
+    <td>{{system.adminId}}</td>
+    <td>{{system.sysId}}</td>
+    <td>{{system.partType}}</td>
+    <td>{{system.SVSB}}</td>
+    <td>{{system.PG}}</td>
+    <td>{{system.service}}</td>
+    <td>{{system.expressCode}}</td>
+    <td>{{system.noOfCpus}}</td>
+    <td>{{system.moboModel}}</td>
+    <td>{{system.moboChipset}}</td>
+  </tr>
+
+</table>
+
+            </div>
+    </div>
+</div>

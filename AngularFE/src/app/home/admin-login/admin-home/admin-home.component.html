@@ -1,0 +1,47 @@
+
+
+<div *ngFor="let admin of adminService.adminData" >
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+  <h1> Welcome {{admin.firstName}} {{admin.lastName}}
+    </h1>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<div class="row">Your Registered email is: {{admin.email}}</div>
+  <br>
+<span></span>
+
+
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened="true">
+        <mat-toolbar color="">Menu<i class="material-icons">menu</i></mat-toolbar>
+      <span><mat-toolbar color="primary" routerLink='/systemsList'><h4>systems List</h4><i class="material-icons">list</i></mat-toolbar></span>
+      <span><mat-toolbar color="primary" routerLink='/usersList'><h4>Users List</h4><i class="material-icons">list</i></mat-toolbar></span>
+      <span><mat-toolbar color="primary" routerLink='/addUser'><h4>Add User</h4><i class="material-icons" >add</i></mat-toolbar></span>
+      <span><mat-toolbar color="primary" routerLink='/assignSystem'><h4>Assign System</h4><i class="material-icons">add</i></mat-toolbar></span>
+    </mat-drawer>
+    <mat-drawer-content>
+      <div class="row">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-drawer-content>
+  </mat-drawer-container>
+</div>
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <h1> 
+        TAJMAC IT SOlUTIONS
+          </h1>
+          </mat-toolbar-row>
+  
+  <mat-toolbar-row>
+    <ul>
+      <li>
+        contact us: tajmac@contactus.com
+        
+      </li>
+      <li> Copyright © 2017 TAJMAC IT Solutions Pvt. Ltd. All Rights Reserved. </li>
+    </ul>
+  </mat-toolbar-row>
+  

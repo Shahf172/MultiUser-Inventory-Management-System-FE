@@ -1,0 +1,366 @@
+
+<div class="row">
+        <div class="col s8 offset-s2">
+                <div class="card">
+                    <div class="sm-jumbotron center-align">
+                        <h2>Add System</h2>
+                    </div>
+<form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm.value)" >
+  <div class="row">
+      <div class="input-field col s6">
+    
+          <input type="number" #Id="ngModel" [(ngModel)]="system.Id" name="Id" placeholder="Id" required>
+      </div>
+      <div class="input-field col s6">
+    
+        <input type="number" #partType="ngModel" [(ngModel)]="system.partType" name="partType" placeholder="Part Type " required>
+    </div>
+  </div>
+  <div class="row">
+          <div class="input-field col s6">
+    
+              <input type="number" #serial="ngModel" [(ngModel)]="system.serial" name="serial" placeholder="Serial" required>
+          </div>
+          <div class="input-field col s6">
+    
+            <input type="text" #qrCode="ngModel" [(ngModel)]="system.qrCode" name="qrCode" placeholder="qrCode" required>
+        </div>
+      </div>
+      
+    <div class="row">
+      <div class="input-field col s6">
+    
+          <input type="image" #qrImage="ngModel" [(ngModel)]="system.qrImage" name="qrImage" placeholder="qr image" >
+      </div>
+      <div class="input-field col s6">
+    
+        <input type="text" #pcNo="ngModel" [(ngModel)]="system.pcNo" name="pcNo" placeholder="Pc No" required>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="input-field col s6">
+    
+        <input type="text" #dc_3v="ngModel" [(ngModel)]="system.dc_3v" name="dc_3v" placeholder="dc 3v" required>
+    </div>
+    <div class="input-field col s6">
+    
+      <input type="text" #dc_5v="ngModel" [(ngModel)]="system.dc_5v" name="dc_5v" placeholder="dc 5v" required>
+  </div>
+</div>
+
+<div class="row">
+  <div class="input-field col s6">
+    
+      <input type="text" #dc_12v="ngModel" [(ngModel)]="system.dc_12v" name="dc_12v" placeholder="dc 12v" required>
+  </div>
+  <div class="input-field col s6">
+    
+    <input type="text" #dc12v="ngModel" [(ngModel)]="system.dc12v" name="dc12v" placeholder="dc-12v" required>
+</div>
+</div>
+
+<div class="row">
+  <div class="input-field col s6">
+    
+      <input type="text" #C_12v="ngModel" [(ngModel)]="system.c_12v" name="C_12v" placeholder="C 12v" required>
+  </div>
+  <div class="input-field col s6">
+    
+    <input type="text" #SVSB="ngModel" [(ngModel)]="system.SVSB" name="SVSB" placeholder="SVSB" required>
+</div>
+</div>
+
+<div class="row">
+  <div class="input-field col s6">
+    
+      <input type="text" #PG="ngModel" [(ngModel)]="system.PG" name="PG" placeholder="PG" required>
+  </div>
+  <div class="input-field col s6">
+    
+    <input type="text" #service="ngModel" [(ngModel)]="system.service" name="service" placeholder="service" required>
+</div>
+</div>
+
+<div class="row">
+  <div class="input-field col s6">
+    
+      <input type="text" #expressCode="ngModel" [(ngModel)]="system.expressCode" name="expressCode" placeholder="Express Code" required>
+  </div>
+  <div class="input-field col s6">
+    
+    <input type="text" #mfgDate="ngModel" [(ngModel)]="system.mfgDate" name="mfgDate" placeholder="Mfg Date" required>
+</div>
+</div>
+
+<div class="row">
+  <div class="input-field col s6">
+    
+      <input type="text" #model="ngModel" [(ngModel)]="system.model" name="model" placeholder="model" required>
+  </div>
+  <div class="input-field col s6">
+    
+    <input type="text" #noOfCpus="ngModel" [(ngModel)]="system.noOfCpus" name="noOfCpus" placeholder="No Of CPU's" required>
+</div>
+</div>
+
+<div class="row">
+  <div class="input-field col s6">
+    
+      <input type="text" #codeName="ngModel" [(ngModel)]="system.codeName" name="codeName" placeholder="Code Name" required>
+  </div>
+  <div class="input-field col s6">
+    
+    <input type="text" #cache1_1="ngModel" [(ngModel)]="system.cache1_1" name="cache1_1" placeholder="cache 1" required>
+</div>
+</div>
+
+<div class="row">
+  <div class="input-field col s6">
+    
+      <input type="text" #cache1_2="ngModel" [(ngModel)]="system.cache1_2" name="cache1_2" placeholder="cache1_2" required>
+  </div>
+  <div class="input-field col s6">
+    
+    <input type="text" #bootStages="ngModel" [(ngModel)]="system.bootStages" name="bootStages" placeholder="Boot Stages" required>
+</div>
+</div>
+
+<div class="row">
+  <div class="input-field col s6">
+    
+      <input type="text" #moboModel="ngModel" [(ngModel)]="system.moboModel" name="moboModel" placeholder="Mobo Model" required>
+  </div>
+  <div class="input-field col s6">
+    
+    <input type="text" #moboChipset="ngModel" [(ngModel)]="system.moboChipset" name="moboChipset" placeholder="mobo Chipset" required>
+</div>
+</div>
+
+<div class="row">
+  <div class="input-field col s6">
+    
+      <input type="text" #biosVersion="ngModel" [(ngModel)]="system.biosVersion" name="biosVersion" placeholder="Bios Version" required>
+  </div>
+  <div class="input-field col s6">
+    
+    <input type="text" #diskModel=""ngModel [(ngModel)]="system.diskModel" name="diskModel" placeholder="Disk Model" required>
+</div>
+</div>
+
+<div class="row">
+  <div class="input-field col s6">
+    
+      <input type="text" #damageBlock="ngModel" [(ngModel)]="system.damageBlock" name="damageBlock" placeholder="Damage Block" required>
+  </div>
+  <div class="input-field col s6">
+    
+    <input type="text" #maxTemp="ngModel" [(ngModel)]="system.maxTemp" name="maxTemp" placeholder="Max Temp" required>
+</div>
+</div>
+
+<div class="row">
+  <div class="input-field col s6">
+    
+      <input type="text" #testedSpeed="ngModel" [(ngModel)]="system.testedSpeed" name="testedSpeed" placeholder="Tested Speed" required>
+  </div>
+  <div class="input-field col s6">
+    
+    <input type="text" #timeSpent="ngModel" [(ngModel)]="system.timeSpent" name="timeSpent" placeholder="Time Spent" required>
+</div>
+</div>
+
+<div class="row">
+  <div class="input-field col s6">
+    
+      <input type="text" #tRateMin="ngModel" [(ngModel)]="system.tRateMin" name="tRateMin" placeholder="Temprature Rate Minimum" required>
+  </div>
+  <div class="input-field col s6">
+    
+    <input type="text" #tRateMax="ngModel" [(ngModel)]="system.tRateMax" name="tRateMax" placeholder="Temprature Rate Max" required>
+</div>
+</div>
+
+<div class="row">
+  <div class="input-field col s6">
+    
+      <input type="text" #tRateAvg="ngModel" [(ngModel)]="system.tRateAvg" name="tRateAvg" placeholder="Temprature Rate Avg" required>
+  </div>
+  <div class="input-field col s6">
+    
+    <input type="text" #accessTime="ngModel" [(ngModel)]="system.accessTime" name="accessTime" placeholder="Access Time" required>
+</div>
+</div>
+
+<div class="row">
+  <div class="input-field col s6">
+    
+      <input type="text" #burstRate="ngModel" [(ngModel)]="system.burstRate" name="burstRate" placeholder="Burst Rate" required>
+  </div>
+  <div class="input-field col s6">
+   
+    <input type="text" #cpuUsage="ngModel" [(ngModel)]="system.cpuUsage" name="cpuUsage" placeholder="CPU Usage" required>
+</div>
+</div>
+
+<div class="row">
+  <div class="input-field col s6">
+   
+      <input type="text" #diskwipe="ngModel" [(ngModel)]="system.diskwipe" name="diskwipe" placeholder="Diskwipe" required>
+  </div>
+  <div class="input-field col s6">
+   
+    <input type="text" #winMemDiag="ngModel" [(ngModel)]="system.winMemDiag" name="winMemDiag" placeholder="Windows Memory Diagnose" required>
+</div>
+</div>
+
+<div class="row">
+  <div class="input-field col s6">
+   
+      <input type="text" #dimm1PartNo="ngModel" [(ngModel)]="system.dimm1PartNo" name="dimm1PartNo" placeholder="dimm 1 Part No" required>
+  </div>
+  <div class="input-field col s6">
+   
+    <input type="text" #dimm1SerialNo="ngModel" [(ngModel)]="system.dimm1SerialNo" name="dimm1SerialNo" placeholder="Dimm 1 Serial No" required>
+</div>
+</div>
+
+<div class="row">
+  <div class="input-field col s6">
+   
+      <input type="text" #dimm2PartNo="ngModel" [(ngModel)]="system.dimm2PartNo" name="dimm2PartNo" placeholder="Dimm 2 Part No" required>
+  </div>
+  <div class="input-field col s6">
+   
+    <input type="text" #dimm2serialNo="ngModel" [(ngModel)]="system.dimm2SerialNo" name="dimm2serialNo" placeholder="Dimm 2 Serial No" required>
+</div>
+</div>
+
+<div class="row">
+  <div class="input-field col s6">
+   
+      <input type="text" #dimm3PartNo="ngModel" [(ngModel)]="system.dimm3PartNo" name="dimm3PartNo" placeholder="Dimm 3 Part No" required>
+  </div>
+  <div class="input-field col s6">
+   
+    <input type="text" #dimm3SerialNo="ngModel" [(ngModel)]="system.dimm3SerialNo" name="dimm3SerialNo" placeholder="Dimm 3 Serial No" required>
+</div>
+</div>
+
+<div class="row">
+  <div class="input-field col s6">
+   
+      <input type="text" #dimm4PartNo="ngModel" [(ngModel)]="system.dimm4PartNo" name="dimm4PartNo" placeholder="Dimm 4 Part No" required>
+  </div>
+  <div class="input-field col s6">
+   
+    <input type="text" #dimm4SerialNo="ngModel" [(ngModel)]="system.dimm4SerialNo" name="dimm4SerialNo" placeholder="Dimm 4 Serial No" required>
+</div>
+</div>
+
+<div class="row">
+  <div class="input-field col s6">
+   
+      <input type="text" #modelNo="ngModel" [(ngModel)]="system.modelNo" name="modelNo" placeholder="Model No" required>
+  </div>
+  <div class="input-field col s6">
+   
+    <input type="text" #productId="ngModel" [(ngModel)]="system.productId" name="productId" placeholder="Product Id" required>
+</div>
+</div>
+
+<div class="row">
+  <div class="input-field col s6">
+   
+      <input type="text" #serialNo="ngModel" [(ngModel)]="system.serialNo" name="serialNo" placeholder="Serial No" required>
+  </div>
+  <div class="input-field col s6">
+   
+    <input type="text" #mfg="ngModel" [(ngModel)]="system.mfg" name="mfg" placeholder="Manufacturing" required>
+</div>
+</div>
+
+<div class="row">
+  <div class="input-field col s6">
+   
+      <input type="text" #winReqId="ngModel" [(ngModel)]="system.winReqId" name="winReqId" placeholder="Windows Required Id" required>
+  </div>
+  <div class="input-field col s6">
+   
+    <input type="text" #winCoaId="ngModel" [(ngModel)]="system.winCoaId" name="winCoaId" placeholder="Windows COA Id" required>
+</div>
+</div>
+
+<div class="row">
+  <div class="input-field col s6">
+   
+      <input type="text" #winProduct="ngModel" [(ngModel)]="system.winProduct" name="winProduct" placeholder="Windows Product" required>
+  </div>
+  <div class="input-field col s6">
+   
+    <input type="text" #winXCoaId="ngModel" [(ngModel)]="system.winXCoaId" name="winXCoaId" placeholder="Windows XCOA Id" required>
+</div>
+</div>
+
+<div class="row">
+  <div class="input-field col s6">
+   
+      <input type="text" #winLicType="ngModel" [(ngModel)]="system.winLicType" ngModel name="winLicType" placeholder="Windows Licsence Type" required>
+  </div>
+  <div class="input-field col s6">
+   
+    <input type="text" #winProdKey="ngModel" [(ngModel)]="system.winProductKey" name="winProdKey" placeholder="Windows Product Key" required>
+</div>
+</div>
+
+<div class="row">
+    <div class="input-field col s6">
+   
+        <input type="text" #offReqId="ngModel" [(ngModel)]="system.offReqId" name="offReqId" placeholder="Office Required Id" required>
+    </div>
+    <div class="input-field col s6">
+   
+      <input type="text" #offCoaId="ngModel" [(ngModel)]="system.offCoaId" name="offCoaId" placeholder="Office Coa Id" required>
+  </div>
+  </div>
+
+  <div class="row">
+    <div class="input-field col s6">
+   
+        <input type="text" #offProd="ngModel" [(ngModel)]="system.offProd" name="offProd" placeholder="Office Product" required>
+    </div>
+    <div class="input-field col s6">
+   
+      <input type="text" #offXCoaId="ngModel" [(ngModel)]="system.offXCoaId" name="offXCoaId" placeholder="Office XCOA Id" required>
+  </div>
+  </div>
+
+  <div class="row">
+    <div class="input-field col s6">
+   
+        <input type="text" #offLicType="ngModel" [(ngModel)]="system.offLicType" name="offLicType" placeholder="Office Liscence Type" required>
+    </div>
+    <div class="input-field col s6">
+   
+      <input type="text" #offProdKey="ngModel" [(ngModel)]="system.offProdKey" name="offProdKey" placeholder="Office Product Key" required>
+  </div>
+  </div>
+
+
+
+
+      <div class="row">
+          <div class="input-field col s12">
+              <button [disabled]="!loginForm.valid" class="btn-large btn-submit" type="submit">Submit</button>
+          </div>
+      </div>
+      <div>
+          <router-outlet></router-outlet>
+      </div>
+    
+</form>
+
+</div>
+</div>
+</div>
+

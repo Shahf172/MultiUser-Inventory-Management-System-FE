@@ -1,0 +1,60 @@
+
+<div class="row">
+        <div class="col s8 offset-s2">
+                <div class="card">
+                    <div class="sm-jumbotron center-align">
+                        <h2>Add User</h2>
+                    </div>
+<form  #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+  <div class="row">
+      <div class="input-field col s12">
+        <input type="text" name="Id" #Id="ngModel" [(ngModel)]="user.Id" placeholder="Id" required>
+      </div>
+  </div>
+
+  <div class="row">
+    <div class="input-field col s6">
+        <input type="text" name="firstName" #firstName="ngModel" [(ngModel)] ="user.firstName"  placeholder="firstName" required>
+    </div>  
+          <div class="input-field col s6">
+            <input type="text" name="lastName" #lastName="ngModel" [(ngModel)]="user.lastName"  placeholder="lasttName" required>
+          </div>
+        </div>
+          
+    <div class="row">
+        <div class="input-field col s6">
+            <input type="text" name="usertName" #userName="ngModel" [(ngModel)]="user.userName" placeholder="usertName" required>
+        </div>
+        <div class="input-field col s6">
+        <input type="text" name="designation" designation="ngModel" [(ngModel)]="user.designation"  placeholder="Designation" required>
+      </div>
+    </div>
+       
+    
+  <div class="row">
+    <div class="input-field col s6">
+        <input type="email" name="email" #email="ngModel" [(ngModel)]="user.email"  placeholder="email" required>
+    </div>
+    <div class="input-field col s6">
+        <input type="text" name="password" #password="ngModel" [(ngModel)]="user.password"  placeholder="Password" required>
+    </div>
+</div>
+     
+      <div class="row">
+            <div class="input-field col s8">
+                   <button class="btn-large btn-submit" type="submit">Submit</button>
+                </div>
+
+                <div class="input-field col s4">
+                        <button class="btn-large btn-reset"  type="reset">Reset</button>
+                    </div>
+                </div>
+
+      <div>
+          <router-outlet></router-outlet>
+      </div>  
+</form>
+
+</div>
+        </div>
+</div>

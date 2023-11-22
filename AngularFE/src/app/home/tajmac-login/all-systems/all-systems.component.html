@@ -1,0 +1,41 @@
+<div class="row">
+    <div class="col s8 offset-s2">
+            <div class="card">
+                <div class="sm-jumbotron center-align">
+                    <h2>Systems List</h2>
+                </div>
+
+<table class="striped">
+
+    <th>Id</th>
+    <th>SVBP</th>
+    <th>PG</th>
+    <th>Service</th>
+    <th>Express Code</th>
+    <th>No of CPU's</th>
+    <th>Mobo Model</th>
+    <th>Mobo Chipset</th>
+    <th>Bios Version</th>
+
+
+    <tr *ngFor="let system of tajmacService.systemsList">
+  
+      <td>{{system.Id}}</td>
+      <td>{{system.SVBP}}</td>
+      <td>{{system.PG}}</td>
+      <td>{{system.service}}</td>
+      <td>{{system.expressCode}}</td>
+      <td>{{system.noOfCpus}}</td>
+      <td>{{system.moboModel}}</td>
+      <td>{{system.moboChipset}}</td>
+      <td>{{system.biosVersion}}</td>
+        <td><i class="material-icons">edit</i></td>
+        <td><i class="material-icons">delete_forever</i></td>
+        <td><i class="material-icons">details</i></td>
+    </tr>
+  
+  </table>
+
+</div>
+</div>
+</div>

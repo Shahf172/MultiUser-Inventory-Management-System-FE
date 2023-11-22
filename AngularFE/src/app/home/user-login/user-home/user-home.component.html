@@ -1,0 +1,127 @@
+<div *ngFor="let user of userService.userData" >
+        <mat-toolbar color="primary">
+            <mat-toolbar-row>
+          <h1> Welcome {{user.firstName}} {{user.lastName}}
+            </h1>
+            </mat-toolbar-row>
+        </mat-toolbar>
+
+<div class="row">
+    <div class="col s8 offset-s2">
+            <div class="card">
+                <div class="sm-jumbotron center-align">
+                    <h2>Your System Detail</h2>
+                </div>
+                <div *ngFor="let system of userService.custSys" >
+                <table class="centered highlight responsive-table">
+                    <tr>
+                        <td><b>system Id</b>  : {{system.Id}}</td>
+                       <td><b>Access Time</b>  : {{system.accessTime}}</td>
+                       <td><b>Bios Version</b>  : {{system.biosVersion}}</td>
+                       <td><b>Boot Stages</b>  : {{system.bootStages}}</td>
+                    </tr>
+
+                    <tr>
+                            <td><b>Burst Rate</b>  : {{system.burstRate}}</td>
+                            <td><b>Cache 1_ 1</b>  : {{system.cache1_1}}</td>
+                            <td><b>Cache 1_ 2</b>  : {{system.cache1_2}}</td>
+                            <td><b>Capacity</b>  : {{system.capacity}}</td>
+                        
+                     </tr>
+                     <tr>
+                            <td><b>Code Name</b>  : {{system.codeName}}</td>
+                            <td><b>Cpu Usage</b>  : {{system.cpuUsage}}</td>
+                            <td><b>C_ 12v </b>  : {{system.C_12v}}</td>
+                            <td><b>Damage Block</b>  : {{system.damageBlock}}</td>
+                        
+                     </tr>
+                     <tr>
+                            <td><b>Dc_ 12v</b>  : {{system.dc_12v}}</td>
+                            <td><b>Dc-12v</b>  : {{system.dc12v}}</td>
+                            <td><b>Dc_ 3v</b>  : {{system.dc_3v}}</td>
+                            <td><b>Dc_ 5v</b>  : {{system.dc_5v}}</td>
+                        
+                     </tr>
+                     <tr>
+                        <td><b>Dimm. 1 Part No</b>  : {{system.dimm1PartNo}}</td>
+                        <td><b>Dimm. 1 Serial No</b>  : {{system.dimm1SerialNo}}</td>
+                        <td><b>Dimm. 2 Part No</b>  : {{system.dimm2PartNo}}</td>
+                        <td><b>Dimm. 2 Serial No</b>  : {{system.dimm2SerialNo}}</td>
+                    
+                 </tr>
+                 <tr>
+                    <td><b>Dimm. 3 Part No</b>  : {{system.dimm3PartNo}}</td>
+                    <td><b>Dimm. 3 Serial No</b>  : {{system.dimm3SerialNo}}</td>
+                    <td><b>Dimm. 4 Part No</b>  : {{system.dimm4PartNo}}</td>
+                    <td><b>Dimm. 4 Serial No</b>  : {{system.dimm4SerialNo}}</td>
+                
+             </tr>
+             <tr>
+                <td><b>Disk Model</b>  : {{system.diskModel}}</td>
+                <td><b>Disk Serial</b>  : {{system.diskSerial}}</td>
+                <td><b>Disk Wipe</b>  : {{system.diskwipe}}</td>
+                <td><b>Express Code</b>  : {{system.expressCode}}</td>
+            
+         </tr>
+         <tr>
+            <td><b>Max Temprature</b>  : {{system.maxTemp}}</td>
+            <td><b>Mfg</b>  : {{system.mfg}}</td>
+            <td><b>Mfg Date</b>  : {{system.mfgDate}}</td>
+            <td><b>Mobo Chipset</b>  : {{system.moboChipset}}</td>
+     </tr>
+     <tr>
+        <td><b>Mobo Model</b>  : {{system.mobModel}}</td>
+        <td><b>Model</b>  : {{system.model}}</td>
+        <td><b>Model No</b>  : {{system.modelNo}}</td>
+        <td><b>No Of CPUS</b>  : {{system.noOfCpus}}</td>
+ </tr>
+ <tr>
+    <td><b>Office COA Id</b>  : {{system.offCoaId}}</td>
+    <td><b>Office Liscence Type</b>  : {{system.offLicType}}</td>
+    <td><b>Office Product</b>  : {{system.offProd}}</td>
+    <td><b>Office Product Key</b>  : {{system.offProdKey}}</td>
+</tr>
+<tr>
+    <td><b>Max Temprature</b>  : {{system.maxTemp}}</td>
+    <td><b>Mfg</b>  : {{system.mfg}}</td>
+    <td><b>Mfg Date</b>  : {{system.mfgDate}}</td>
+    <td><b>Mobo Chipset</b>  : {{system.moboChipset}}</td>
+</tr>
+<tr>
+    <td><b>Office Required Id</b>  : {{system.offReqId}}</td>
+    <td><b>Office XCOA ID</b>  : {{system.offXCoaId}}</td>
+    <td><b>Part Type</b>  : {{system.partType}}</td>
+    <td><b>Pc No</b>  : {{system.pcNo}}</td>
+</tr>
+
+                </table>
+                    
+                
+                    
+                    
+                </div>
+                  
+                      
+                      
+    
+
+              </div>
+            </div>
+        </div>
+        <mat-toolbar color="primary">
+                <mat-toolbar-row>
+                    <h1> 
+                    TAJMAC IT SOlUTIONS
+                      </h1>
+                      </mat-toolbar-row>
+              
+              <mat-toolbar-row>
+                <ul>
+                  <li>
+                    contact us: tajmac@contactus.com
+                    
+                  </li>
+                  <li> Copyright © 2017 TAJMAC IT Solutions Pvt. Ltd. All Rights Reserved. </li>
+                </ul>
+              </mat-toolbar-row>
+              
